@@ -261,13 +261,77 @@ NPR value = 120
 NCR value = 5
 ```
 ***
-#### Example 5: A java code Linear Search Algorithm 
+#### Example 5: A java code to generate all possible solutions for the N-Queens problem for a given value of N
 
 ```
+import java.util.Scanner;
+
+public class NQueen {
+    public static int[] x = new int[10];
+    public static int solutionNumber = 0;
+
+    public static void printboard(int n) {
+        int i;
+        for (i = 1; i <= n; i++) {
+            System.out.print(x[i] + "  ");
+        }
+        System.out.println();
+    }
+
+    public static void NQueen(int k, int n) {
+        int i;
+        for (i = 1; i <= n; i++) {
+            if (place(k, i) == 1) {
+                x[k] = i;
+                if (k == n) {
+                    solutionNumber++;
+                    System.out.println("Solution Number: " + solutionNumber);
+                    printboard(n);
+                } else {
+                    NQueen(k + 1, n);
+                }
+            }
+        }
+    }
+
+    public static int place(int k, int i) {
+        int j;
+        for (j = 1; j < k; j++) {
+            if ((x[j] == i) || Math.abs(x[j] - i) == Math.abs(j - k)) {
+                return 0;
+            }
+        }
+        return 1;
+    }
+
+    public static void main(String[] args) {
+        int n;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter Value of N:");
+        n = scanner.nextInt();
+        if(n<4){
+          System.out.println("Invalid input, n should be greater or equal than 4");
+        }
+        else{
+          NQueen(1, n);
+        }
+    }
+}
+
 ```
 
 #### Output: 
 ```
+Enter Value of N:6
+Solution Number: 1
+2  4  6  1  3  5  
+Solution Number: 2
+3  6  2  5  1  4  
+Solution Number: 3
+4  1  5  2  6  3  
+Solution Number: 4
+5  3  1  6  4  2  
+
 ```
 ***
 #### Example 6: A java code Linear Search Algorithm 
