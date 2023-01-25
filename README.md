@@ -219,13 +219,46 @@ Sorted Data :
 	2	4	6	8	10
 ```
 ***
-#### Example 4: A java code Linear Search Algorithm 
+#### Example 4: A java code to Find nCr and nPr
 
 ```
+import java.util.Scanner;
+
+public class NCR_NPR {
+    public static void main(String[] args) {
+        int n, r;
+        long npr, ncr;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the value of n : ");
+        n = scanner.nextInt();
+        System.out.print("Enter the value of r : ");
+        r = scanner.nextInt();
+
+        npr = fact(n) / fact(n - r);
+        ncr = npr / fact(r);
+        System.out.println("NPR value = " + npr);
+        System.out.println("NCR value = " + ncr);
+    }
+
+    public static long fact(int x) {
+        int i;
+        long f = 1;
+        for (i = 2; i <= x; i++) {
+            f = f * i;
+        }
+        return f;
+    }
+}
+
 ```
 
 #### Output: 
 ```
+Enter the value of n : 5
+Enter the value of r : 4
+NPR value = 120
+NCR value = 5
 ```
 ***
 #### Example 5: A java code Linear Search Algorithm 
