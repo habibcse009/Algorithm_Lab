@@ -1,4 +1,4 @@
-# CSE_Algorithm_Lab - Binary Search, Linear Search and many more searching algorithm
+# CSE_Algorithm_Lab - Searching Algorithm and Sorting Algorithm
 Java codes for Lab Classes of Computer Science &amp; Engineering's Courses<br>
 #### Example 1: A java code Binary Search Algorithm 
 
@@ -128,13 +128,95 @@ Enter the number you want to search:
 
 ```
 ***
-#### Example 3: A java code Linear Search Algorithm 
+#### Example 3: A java code Merge Sort Algorithm 
 
 ```
+import java.util.Scanner;
+
+public class MergeSort {
+
+    public static void main(String[] args) {
+        int i;
+
+        System.out.println("Simple Merge Sort Example - Functions and Array\n");
+        System.out.println("Enter the size of the array:");
+
+        Scanner scanner = new Scanner(System.in);
+        int MAX_SIZE = scanner.nextInt();
+        int[] arr_sort = new int[MAX_SIZE];
+
+        System.out.println("Enter " + MAX_SIZE + " Elements for Sorting");
+        for (i = 0; i < MAX_SIZE; i++)
+            arr_sort[i] = scanner.nextInt();
+
+        System.out.println("\nYour Data   :");
+        for (i = 0; i < MAX_SIZE; i++) {
+            System.out.print("\t" + arr_sort[i]);
+        }
+
+        merge_sort(arr_sort, 0, MAX_SIZE - 1);
+
+        System.out.println("\n\nSorted Data :");
+        for (i = 0; i < MAX_SIZE; i++) {
+            System.out.print("\t" + arr_sort[i]);
+        }
+    }
+
+    private static void merge_sort(int[] arr_sort, int i, int j) {
+        int m;
+
+        if (i < j) {
+            m = (i + j) / 2;
+            merge_sort(arr_sort, i, m);
+            merge_sort(arr_sort, m + 1, j);
+            // Merging two arrays
+            merge_array(arr_sort, i, m, m + 1, j);
+        }
+    }
+
+    private static void merge_array(int[] arr_sort, int a, int b, int c, int d) {
+        int[] t = new int[50];
+        int i = a, j = c, k = 0;
+
+        while (i <= b && j <= d) {
+            if (arr_sort[i] < arr_sort[j])
+                t[k++] = arr_sort[i++];
+            else
+                t[k++] = arr_sort[j++];
+        }
+
+        //collect remaining elements 
+        while (i <= b)
+            t[k++] = arr_sort[i++];
+
+        while (j <= d)
+            t[k++] = arr_sort[j++];
+
+        for (i = a, j = 0; i <= d; i++, j++)
+            arr_sort[i] = t[j];
+    }
+}
+
 ```
 
 #### Output: 
 ```
+Simple Merge Sort Example - Functions and Array
+
+Enter the size of the array:
+5
+Enter 5 Elements for Sorting
+2
+10
+4
+6
+8
+
+Your Data   :
+	2	10	4	6	8
+
+Sorted Data :
+	2	4	6	8	10
 ```
 ***
 #### Example 4: A java code Linear Search Algorithm 
