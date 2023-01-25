@@ -54,3 +54,20 @@ public class BinarySearch {
 }
 
 ```
+
+#### Output: 
+```
+Enter the size of arrays 
+4
+Enter number 1 element of array: 
+2
+Enter number 2 element of array: 
+4
+Enter number 3 element of array: 
+5
+Enter number 4 element of array: 
+11
+Enter the number you want to search: 
+5
+5 Found at  Position :3
+```
