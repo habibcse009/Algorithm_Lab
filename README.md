@@ -451,7 +451,7 @@ Notation (O(n^2)): 2083900 ns
 
 ```
 ***
-#### Example 8: A java code Linear Search Algorithm 
+#### Example 8: A java code program that implements the Floyd-Warshall algorithm to find the shortest paths between all pairs of vertices in a weighted, directed graph
 
 ```
 ```
