@@ -566,9 +566,10 @@ The shortest paths are:
 ![OgxYZ1fX2o-floyd-warshall-problem2](https://user-images.githubusercontent.com/27882232/214528496-a5622985-a45d-419d-8ab3-8a518da9b71e.png)
 
 ***
-#### Example 9: A java code Linear Search Algorithm 
+#### Example 9: A java code of Dijkstra's algorithm for finding the shortest paths from a single source vertex to all other vertices in a weighted graph.
 
 ```
+
 ```
 
 #### Output: 
