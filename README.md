@@ -334,13 +334,53 @@ Solution Number: 4
 
 ```
 ***
-#### Example 6: A java code Linear Search Algorithm 
+#### Example 6: A java code Insertion Sort Algorithm 
 
 ```
+import java.util.Scanner;
+
+public class InsertionSort {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the size of the array:");
+        int size = scanner.nextInt();
+        int[] arr = new int[size];
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < size; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        insertionSort(arr);
+        System.out.print("Sorted array: ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i]+ " ");
+        }
+    }
+    public static void insertionSort(int[] arr) {
+        int n = arr.length;
+        for (int i = 1; i < n; i++) {
+            int key = arr[i];
+            int j = i - 1;
+            while (j >= 0 && arr[j] > key) {
+                arr[j + 1] = arr[j];
+                j--;
+            }
+            arr[j + 1] = key;
+        }
+    }
+}
+
 ```
 
 #### Output: 
 ```
+Enter the size of the array:
+4
+Enter the elements of the array:
+3
+1
+8
+6
+Sorted array: 1 3 6 8 
 ```
 ***
 #### Example 7: A java code Linear Search Algorithm 
