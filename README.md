@@ -72,7 +72,88 @@ Enter the number you want to search:
 5 Found at  Position :3
 ```
 ***
-#### Example 1: A java code Linear Search Algorithm 
+#### Example 2: A java code Linear Search Algorithm 
+
+```
+```
+
+#### Output: 
+```
+```
+***
+#### Example 3: A java code Linear Search Algorithm 
+
+```
+```
+
+#### Output: 
+```
+```
+***
+#### Example 4: A java code Linear Search Algorithm 
+
+```
+```
+
+#### Output: 
+```
+```
+***
+#### Example 5: A java code Linear Search Algorithm 
+
+```
+```
+
+#### Output: 
+```
+```
+***
+#### Example 6: A java code Linear Search Algorithm 
+
+```
+```
+
+#### Output: 
+```
+```
+***
+#### Example 7: A java code Linear Search Algorithm 
+
+```
+```
+
+#### Output: 
+```
+```
+***
+#### Example 8: A java code Linear Search Algorithm 
+
+```
+```
+
+#### Output: 
+```
+```
+***
+#### Example 9: A java code Linear Search Algorithm 
+
+```
+```
+
+#### Output: 
+```
+```
+***
+#### Example 10: A java code Linear Search Algorithm 
+
+```
+```
+
+#### Output: 
+```
+```
+***
+#### Example 11: A java code Linear Search Algorithm 
 
 ```
 ```
