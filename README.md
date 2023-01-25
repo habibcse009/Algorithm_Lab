@@ -71,3 +71,12 @@ Enter the number you want to search:
 5
 5 Found at  Position :3
 ```
+***
+#### Example 1: A java code Linear Search Algorithm 
+
+```
+```
+
+#### Output: 
+```
+```
