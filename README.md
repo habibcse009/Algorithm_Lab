@@ -1,4 +1,4 @@
-# CSE_Algorithm_Lab - Binary Search, Linear Search and many more searching algorithim
+# CSE_Algorithm_Lab - Binary Search, Linear Search and many more searching algorithm
 Java codes for Lab Classes of Computer Science &amp; Engineering's Courses<br>
 #### Example 1: A java code Binary Search Algorithm 
 
